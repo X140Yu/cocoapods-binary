@@ -1,5 +1,5 @@
-require_relative '../tool/tool'
-require_relative 'prebuild_sandbox'
+require 'cocoapods-binary/tool/tool'
+require 'cocoapods-binary/helper/prebuild_sandbox'
 
 module Pod
   # a flag that indicate stages

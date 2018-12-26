@@ -1,8 +1,8 @@
-require_relative 'helper/podfile_options'
-require_relative 'helper/feature_switches'
-require_relative 'helper/prebuild_sandbox'
-require_relative 'helper/passer'
-require_relative 'helper/names'
+require 'cocoapods-binary/helper/podfile_options'
+require 'cocoapods-binary/helper/feature_switches'
+require 'cocoapods-binary/helper/prebuild_sandbox'
+require 'cocoapods-binary/helper/passer'
+require 'cocoapods-binary/helper/names'
 
 
 

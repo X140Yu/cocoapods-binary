@@ -1,5 +1,5 @@
-require_relative 'rome/build_framework'
-require_relative 'helper/passer'
+require 'cocoapods-binary/rome/build_framework'
+require 'cocoapods-binary/helper/passer'
 
 # patch prebuild ability
 module Pod

@@ -1,4 +1,4 @@
-require_relative 'names'
+require 'cocoapods-binary/helper/names'
 
 module Pod
   class PrebuildSandbox < Sandbox

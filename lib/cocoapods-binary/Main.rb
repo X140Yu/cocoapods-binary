@@ -1,5 +1,5 @@
-require_relative 'helper/podfile_options'
-require_relative 'tool/tool'
+require 'cocoapods-binary/helper/podfile_options'
+require 'cocoapods-binary/tool/tool'
 
 module Pod
   class Podfile
@@ -37,7 +37,7 @@ module Pod
 end
 
 Pod::HooksManager.register('cocoapods-binary', :pre_install) do |installer_context|
-  require_relative 'helper/feature_switches'
+  require 'cocoapods-binary/helper/feature_switches'
   next if Pod.is_prebuild_stage
 
   # [Check Environment]
@@ -56,8 +56,8 @@ Pod::HooksManager.register('cocoapods-binary', :pre_install) do |installer_conte
   # -- step 1: prebuild framework ---
   # Execute a sperated pod install, to generate targets for building framework,
   # then compile them to framework files.
-  require_relative 'helper/prebuild_sandbox'
-  require_relative 'Prebuild'
+  require 'cocoapods-binary/helper/prebuild_sandbox'
+  require 'cocoapods-binary/prebuild'
 
   Pod::UI.puts '🚀  Prebuild frameworks'
 
@@ -101,6 +101,6 @@ Pod::HooksManager.register('cocoapods-binary', :pre_install) do |installer_conte
   # install
   Pod::UI.puts "\n"
   Pod::UI.puts '🤖  Pod Install'
-  require_relative 'Integration'
+  require 'cocoapods-binary/integration'
   # go on the normal install step ...
 end

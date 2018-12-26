@@ -1,4 +1,4 @@
-require_relative '../tool/tool'
+require 'cocoapods-binary/tool/tool'
 
 module Pod
   class Prebuild
