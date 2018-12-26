@@ -1,4 +1,4 @@
-osx_image: xcode9.3
+osx_image: xcode10
 language: objective-c
 cache:
 - cocoapods
@@ -7,9 +7,7 @@ before_install:
 - gem install cocoapods
 script:
 - rake install
-- cd test
-- sh test.sh
-- cd ..
+- rake
 
 # auto deploy on tagging
 # automatically set by `travis setup rubygems`
