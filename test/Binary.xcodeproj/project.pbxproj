@@ -100,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC317B6D32CD3065C52EB021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -205,6 +212,7 @@
 			buildPhases = (
 				3EEAFD8120F1056D009A9D22 /* Resources */,
 				3EEAFDA320F1056E009A9D22 /* Embed App Extensions */,
+				CC317B6D32CD3065C52EB021 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,18 +334,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Binary/Pods-Binary-frameworks.sh",
-				"${PODS_ROOT}/AFNetworking/AFNetworking.framework",
-				"${PODS_ROOT}/Literal/Literal.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Binary/Pods-Binary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Literal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binary/Pods-Binary-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binary/Pods-Binary-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

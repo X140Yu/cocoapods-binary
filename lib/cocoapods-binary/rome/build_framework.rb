@@ -121,7 +121,7 @@ module Pod
       path.rmtree if path.exist?
     end
 
-    private_class_method :build_dir
+    private
 
     def self.build_dir(sandbox_root)
       # don't know why xcode chose this folder
