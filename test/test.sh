@@ -16,6 +16,8 @@ python change_podfile.py "addSwiftPod"
 pod install
 build
 
+exit(0)
+
 # 
 python change_podfile.py "revertToSourceCode"
 pod install
